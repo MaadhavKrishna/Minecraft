@@ -39,3 +39,17 @@ a
 	border-radius: 10px;
 	margin-bottom: 10px;
 }
+
+.i_div{
+	background-color: slateblue;
+	width:600px;
+	height:300px;
+	border-radius: 15px;
+	margin-top: 15px;
+	padding-top: 20px;
+}
+
+.btn-i{
+	padding-left: 200px;
+	text-align: center;
+}

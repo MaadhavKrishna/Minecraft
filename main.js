@@ -8,7 +8,7 @@ var block_image_height = 100;
 
 var player_object = "";
 var block_image_object = "";
-
+player_update();
 function player_update() {
     fabric.Image.fromURL("player.png", function (Img) {
         player_object = Img;
@@ -90,7 +90,7 @@ function myKeydown(e) {
     }
     if(keyC==82){
         new_image("roof.jpg");
-        console.log("cloud");
+        console.log("roof");
     }
     if(keyC==84){
         new_image("trunk.jpg");
@@ -108,4 +108,40 @@ function myKeydown(e) {
         new_image("yellow_wall.png");
         console.log("yellow_wall");
     }
+}
+
+function left(){
+    if(player_x>=0){
+        player_x=player_x-10;
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+
+function right(){
+    if(player_x<=1000){
+        player_x=player_x+10;
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+
+function up(){
+    if(player_y>=0){
+        player_y=player_y-10;
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+
+function down(){
+    if(player_y<=500){
+        player_y=player_y+10;
+        canvas.remove(player_object);
+        player_update();
+    }
+}
+
+function instructions(){
+    window.location="Instructions.html"
 }
