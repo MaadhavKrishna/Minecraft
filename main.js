@@ -139,6 +139,7 @@ function down(){
         player_y=player_y+10;
         canvas.remove(player_object);
         player_update();
+        window.location="Instructions.html"
     }
 }
 
