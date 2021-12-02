@@ -142,6 +142,6 @@ function down(){
     }
 }
 
-function instructions(){
+function i_open(){
     window.location="Instructions.html"
 }
