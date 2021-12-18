@@ -8,9 +8,12 @@ var block_image_height = 100;
 
 var player_object = "";
 var block_image_object = "";
+
+var player_img=new Image("player.png");
+
 player_update();
 function player_update() {
-    fabric.Image.fromURL("player.png", function (Img) {
+    fabric.Image.fromURL(player_img, function (Img) {
         player_object = Img;
 
         player_object.scaleToWidth(150);
