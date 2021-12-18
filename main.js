@@ -9,7 +9,7 @@ var block_image_height = 100;
 var player_object = "";
 var block_image_object = "";
 
-var player_img=new Image("player.png");
+var player_img="player.png";
 
 player_update();
 function player_update() {
