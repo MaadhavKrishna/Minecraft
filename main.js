@@ -1,4 +1,5 @@
-var canvas = new fabric.Canvas("myCanvas");
+$( window).load(function() {
+    var canvas = new fabric.Canvas("myCanvas");
 
 var player_x = 10;
 var player_y = 10;
@@ -148,3 +149,5 @@ function down(){
 function i_open(){
     window.location="Instructions.html"
 }
+
+});
